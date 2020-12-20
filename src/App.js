@@ -28,17 +28,18 @@ const App = () => {
             {/* Main Content */}
             <Switch>
                 <Route exact path='/' render={ props => <Home {...props} searchTerm={search || null} />} />
-                <Route exact path='/about' render={(props) => <About props={props} />} />
+                <Route exact path='/about' render={(props) => <About {...props} />} />
                 <Route exact path='/services' render={(props) => <Home {...props} />} />
-                <Route exact path='/support' render={(props) => <Home props={props} />} />
-                <Route exact path='/pricing' render={(props) => <Home props={props} />} />
-                <Route exact path='/account' render={(props) => <Home props={props} />} />
+                <Route exact path='/support' render={(props) => <Home {...props} />} />
+                <Route exact path='/pricing' render={(props) => <Home {...props} />} />
+                <Route exact path='/account' render={(props) => <Home {...props} />} />
 
-                <Route exact path='/dashboard' render={(props) => <Home props={props} />} />
-                <Route exact path='/users/:id' render={props => <MainContent props={props} />} />
-                <Route exact path='/users' render={(props) => <Home props={props} />} />
-                <Route exact path='/messages' render={(props) => <Home props={props} />} />
-                <Route exact path='/settings' render={(props) => <Home props={props} />} />
+                <Route exact path='/dashboard' render={(props) => <Home {...props} />} />
+                <Route exact path='/users/:id' render={props => <MainContent {...props} />} />
+                <Route exact path='/users' render={(props) => <Home {...props} />} />
+                <Route exact path='/messages' render={(props) => <Home {...props} />} />
+                <Route exact path='/settings' render={(props) => <Home {...props} />} />
+                <Route exact path='/resources' render={(props) => <Home {...props} />} />
             </Switch>
             {/* Footer Section */}
             <Footer />
