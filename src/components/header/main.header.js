@@ -5,7 +5,7 @@ const DefaultIcon = lazy(() => import('../icons/default.icon'))
 const AuthIcon = lazy(() => import('../icons/auth.account.icon'))
 const SearchForm = lazy(() => import('../header/seach.form'))
 
-export const MainHeader = ({ handleChange, ...props }) => {
+const MainHeader = ({ handleChange, ...props }) => {
     return (<div className="container-fluid site-header sticky-top py-1 d-flex flex-column flex-md-row justify-content-between">
         <Link className="py-2 d-flex text-none" to="/" aria-label="Product">
             <DefaultIcon width="2em" height="2em" className="d-block bi bi-badge-8k" />

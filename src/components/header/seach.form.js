@@ -12,7 +12,8 @@ const DefaultPrimaryIcon = lazy(() => import('../icons/default.primary.icon'))
  */
 export const SearchForm = ({
     handleChange,
-    searcheable
+    searcheable,
+    ...props
 }) => {
     const [toggle, setToggle] = useState(false)
 
