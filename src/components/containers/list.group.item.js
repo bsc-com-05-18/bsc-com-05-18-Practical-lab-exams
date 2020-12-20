@@ -6,7 +6,7 @@ import React from 'react'
  * @param {Props} param0 
  * @returns {Component}
  */
-export const ListGropuItem = ({
+export const ListGroupItem = ({
     user, comments,
     handleUserClick,
     ...props
@@ -23,4 +23,4 @@ export const ListGropuItem = ({
     </a>
 }
 
-export default ListGropuItem;
+export default ListGroupItem;
