@@ -7,9 +7,8 @@ import React from 'react'
  * @returns {Component}
  */
 export const ListGroupItem = ({
-    user, comments,
-    handleUserClick,
-    ...props
+    user,
+    handleUserClick
 }) => {
     return <a href={`#${user.name}`}
         className="list-group-item list-group-item-action align-items-center"
