@@ -5,7 +5,10 @@ import UserService from '../users/users.service';
 const UserList = lazy(() => import('../users/user.list'))
 const UserCommentList = lazy(() => import('../users/user.comment.list'))
 
-const Home = ({ searchTerm, ...props }) => {
+const Home = ({  
+    searchTerm, 
+    ...props 
+}) => {
     const [users, setUsers] = useState(null)
     const [comments, setUserComments] = useState([])
     const [user, setUser] = useState({ name: '' })
