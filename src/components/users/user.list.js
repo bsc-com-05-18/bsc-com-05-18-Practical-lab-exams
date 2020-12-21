@@ -9,15 +9,16 @@ const ListGropuItem = lazy(() => import('../containers/list.group.item'))
  * @param {Props} param0
  * @returns {Component}
  */
-export const UserList = ({
-    handleUserClick
+ const UserList = ({
+    handleUserClick, users
 }) => {
+    
     return <ListGroup>{
         users && users.map(user => {
-            // return (<ListGropuItem
-            //     key={user.id} user={user}
-            //     handleUserClick={handleUserClick}
-            // />)
+             return (<ListGropuItem
+                key={user.id} user={user}
+                handleUserClick={handleUserClick}
+             />)
         })
     }</ListGroup>
 }

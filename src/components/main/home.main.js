@@ -44,7 +44,7 @@ const Home = ({
             .then(response => setUsers(response))
             .catch(error => console.log(error))
 
-    }, [searchTerm]) // TODO introduce infinite loop here
+    },  []) // TODO introduce infinite loop here
 
     const handleOnNextPageClick = () => {
         setPaginationOptions((prevOptions) => {
@@ -120,4 +120,4 @@ const Home = ({
     </div>
 }
 
-// export default Home;
+export default Home;
